@@ -2,7 +2,7 @@ package h10;
 import java.awt.*;
 import java.applet.Applet;
 import java.awt.event.*;
-public class if10_4 extends Applet {
+public class h10_4 extends Applet {
     TextField tv;
     Button knop;
     int in1;
@@ -43,7 +43,8 @@ public class if10_4 extends Applet {
                     string2 = "31";
                     break;
                 case 2:
-                    if (in2 % 4 == 0){
+                    if ( (in2 % 4 == 0 && !(in2 % 100 == 0)) ||
+                            in2 % 400 == 0 ) {
                         string2 = "28";
                     }
                     else {
